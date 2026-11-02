@@ -529,6 +529,8 @@ footer {
   box-shadow: 0 0 0 3px rgba(74,222,128,0.15);
 }
 .timeline-item.has-logo { padding-right: 76px; }
+.timeline-item.has-logo-wide { padding-right: 112px; }
+.timeline-logo.wide { width: 92px; }
 .timeline-logo {
   position: absolute;
   right: 0; top: 0;
@@ -541,7 +543,9 @@ footer {
 }
 @media (max-width: 600px) {
   .timeline-item.has-logo { padding-right: 60px; }
+  .timeline-item.has-logo-wide { padding-right: 90px; }
   .timeline-logo { width: 44px; height: 44px; padding: 4px; }
+  .timeline-logo.wide { width: 74px; }
 }
 .timeline-date {
   font-size: 0.69rem;
@@ -741,14 +745,16 @@ footer {
       <div class="timeline-badge">✓ Completed</div>
     </div>
 
-    <div class="timeline-item highlight reveal">
+    <div class="timeline-item highlight has-logo reveal">
+      <img class="timeline-logo" src="img/mlh-logo.png" alt="Major League Hacking logo">
       <div class="timeline-date">April 2026</div>
       <div class="timeline-title">🏆 HackKosice — 1st Place</div>
       <div class="timeline-sub">Won the AT&amp;T Challenge and Best Use of ElevenLabs Award. Built Nabu, a voice AI assistant for elderly users, in a team of three.</div>
       <div class="timeline-badge">★ 1st Place · Best Use of ElevenLabs</div>
     </div>
 
-    <div class="timeline-item highlight reveal">
+    <div class="timeline-item highlight has-logo-wide reveal">
+      <img class="timeline-logo wide" src="img/sdu-logo.png" alt="SDU Syddansk Universitet logo">
       <div class="timeline-date">2025 – 2026</div>
       <div class="timeline-title">Thesis — Fine-tuning LLMs for Embedded Systems</div>
       <div class="timeline-sub">Fine-tuned Mistral 7B with LoRA for embedded systems engineering. Published on HuggingFace. Graded 10 — among the highest scores on the Danish 12-point scale.</div>
