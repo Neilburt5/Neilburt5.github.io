@@ -528,6 +528,21 @@ footer {
   border-color: var(--green);
   box-shadow: 0 0 0 3px rgba(74,222,128,0.15);
 }
+.timeline-item.has-logo { padding-right: 76px; }
+.timeline-logo {
+  position: absolute;
+  right: 0; top: 0;
+  width: 56px; height: 56px;
+  padding: 5px;
+  object-fit: contain;
+  background: #fff;
+  border: 1px solid var(--border-hover);
+  border-radius: 10px;
+}
+@media (max-width: 600px) {
+  .timeline-item.has-logo { padding-right: 60px; }
+  .timeline-logo { width: 44px; height: 44px; padding: 4px; }
+}
 .timeline-date {
   font-size: 0.69rem;
   font-weight: 500;
@@ -651,8 +666,8 @@ footer {
   <div class="about-wrap">
     <div>
       <div class="about-text reveal reveal-delay-1">
-        <p>I'm a Mechatronics Engineering student at SDU Syddansk Universitet in Denmark, graduating in 2026. My work sits at the intersection of control engineering, robotics, and machine learning — I enjoy the full stack of a system, from modelling the physics to deploying the code.</p>
-        <p>I've designed PID flight controllers for autonomous drones, fine-tuned large language models for embedded systems (thesis graded 10/10), and currently lead the control and programming team at SDU's Micromouse Robotics Club. I'm drawn to problems that are messy in the physical world and require both rigorous engineering and creative thinking.</p>
+        <p>I'm a Mechatronics Engineer with a B.Eng. from SDU Syddansk Universitet in Denmark. My work sits at the intersection of control engineering, robotics, and machine learning — I enjoy the full stack of a system, from modelling the physics to deploying the code.</p>
+        <p>I've designed PID flight controllers for autonomous drones and fine-tuned large language models for embedded systems (thesis graded 10/10). Today I work as a Project Engineer at Cobra Aeronautics, building aircraft engine test benches and maintaining SCADA systems for solar plants, and I lead the control and programming team at SDU's Micromouse Robotics Club. I'm drawn to problems that are messy in the physical world and require both rigorous engineering and creative thinking.</p>
         <p>I've studied and worked internationally — an exchange semester in Shanghai and professional experience in Spain — and I thrive in multicultural, fast-moving environments.</p>
       </div>
       <div class="lang-section">
@@ -710,11 +725,20 @@ footer {
   <h2 class="sec-title reveal reveal-delay-1">Experience & Education</h2>
   <div class="timeline">
 
-    <div class="timeline-item highlight reveal">
+    <div class="timeline-item highlight has-logo reveal">
+      <img class="timeline-logo" src="img/cobra-logo.png" alt="Cobra Aeronautics logo">
+      <div class="timeline-date">October 2026 – Present</div>
+      <div class="timeline-title">Project Engineer — Cobra Aeronautics</div>
+      <div class="timeline-sub">Designing and building test benches for aircraft engines using LabVIEW and PLC programming. Also maintaining the SCADA systems of several photovoltaic plants across Spain.</div>
+      <div class="timeline-badge">● Current</div>
+    </div>
+
+    <div class="timeline-item highlight has-logo reveal">
+      <img class="timeline-logo" src="img/sjtu-logo.png" alt="Shanghai Jiao Tong University logo">
       <div class="timeline-date">July – August 2026</div>
       <div class="timeline-title">Research Program — Shanghai Jiao Tong University</div>
-      <div class="timeline-sub">Currently researching "Safe Reinforcement Learning for Precision Grasping" as part of a research program at Shanghai Jiao Tong University.</div>
-      <div class="timeline-badge">● Ongoing</div>
+      <div class="timeline-sub">Completed a research program on "Safe Reinforcement Learning for Precision Grasping" at the FINS Laboratory, developing a Control Barrier Function safety layer for an autonomous underwater vehicle.</div>
+      <div class="timeline-badge">✓ Completed</div>
     </div>
 
     <div class="timeline-item highlight reveal">
@@ -867,12 +891,16 @@ footer {
       <div class="skill-item"><div class="skill-dot"></div>MATLAB</div>
       <div class="skill-item"><div class="skill-dot"></div>C / C++</div>
       <div class="skill-item"><div class="skill-dot"></div>Git</div>
+      <div class="skill-item"><div class="skill-dot"></div>LabVIEW</div>
+      <div class="skill-item"><div class="skill-dot"></div>PLC Programming</div>
     </div>
     <div class="skill-col reveal reveal-delay-2">
       <div class="skill-col-title">Engineering</div>
       <div class="skill-item"><div class="skill-dot"></div>Control Systems</div>
       <div class="skill-item"><div class="skill-dot"></div>Robotics</div>
       <div class="skill-item"><div class="skill-dot"></div>Embedded Systems</div>
+      <div class="skill-item"><div class="skill-dot"></div>SCADA</div>
+      <div class="skill-item"><div class="skill-dot"></div>Test Bench Design</div>
       <div class="skill-item"><div class="skill-dot"></div>Control Barrier Functions (CBF)</div>
       <div class="skill-item"><div class="skill-dot"></div>Safety Layers for AUV Navigation</div>
       <div class="skill-item"><div class="skill-dot"></div>Simulink / ANSYS</div>
